@@ -243,7 +243,7 @@ segment AS (
         Churn_Reason,
         CASE
             WHEN tenure_group = '0-6 months'
-                 AND Contract = 'Month-to-onth'
+                 AND Contract = 'Month-to-Month'
                  AND charge_group_id = 3
             THEN 'High Risk Segment'
             ELSE 'Other Customers'
