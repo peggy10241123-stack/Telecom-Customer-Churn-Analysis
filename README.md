@@ -8,6 +8,9 @@ End-to-end churn analysis project focused on identifying high-risk customer segm
 
 This project analyzes customer churn behavior in a telecom company using SQL and Tableau.
 
+**Data:** Public Kaggle Telco Customer Churn dataset (7,043 customers).
+**Churn rate definition:** churned customers divided by all customers in the dataset (26.5%). Excluding the 454 customers who had just joined, the rate would be 28.4%.
+
 The analysis focuses on:
 
 - identifying high-risk churn segments
