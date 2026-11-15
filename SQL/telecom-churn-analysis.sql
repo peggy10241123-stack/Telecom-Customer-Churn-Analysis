@@ -1,4 +1,5 @@
 -- 1.Overall Churn Overview
+-- Note: this overview intentionally includes all 7,043 customers (no Monthly_Charge filter), so the headline churn rate covers the full customer base.
 -- Core KPIs:Total Customers,Churned Customers,Churn Rate,Stayed Customers,Joined Customers,Total Revenue,Revenue from Churned Customers,Churn Revenue Share,Net Customer Growth
 SELECT 
 	COUNT(*) AS total_customers,
@@ -83,6 +84,7 @@ ORDER BY charge_group_id;
 
 -- 3.Where is Churn Concentrated? Cross-Segement Analysis
 -- 3.1 Cross：Tenure × Contract
+-- Note: no Monthly_Charge filter here either; segment rates are computed on the full customer base for consistency with the overview.
 SELECT
 	Contract,
     CASE 
